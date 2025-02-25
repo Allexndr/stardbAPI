@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="3 Обновлен RandomPlanet, исправлен API в SwapiService">
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/item-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/person-details/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/random-planet/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/spinner/index.js" afterDir="false" />
+    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="3 commit feat: добавлен компонент RandomPlanet с загрузкой данных&#10;         fix: исправлены ошибки импортов и пути к файлам&#10;         refactor: добавлена обработка ошибок и ErrorIndicator">
+      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/error-indicator/death-star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/error-indicator/error-indicator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/error-indicator/error-indicator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/error-indicator/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/components/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/components/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/components/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/components/person-details/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/components/person-details/person-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/components/random-planet/random-planet.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/components/random-planet/random-planet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/services/swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/services/swapi-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +55,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/aleksandr/WebstormProjects/my_second_react_app/second_react_app/src/components/spinner",
+    "last_opened_file_path": "/Users/aleksandr/WebstormProjects/my_second_react_app/second_react_app/src/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -77,13 +67,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/second_react_app/src/components" />
+      <recent name="$PROJECT_DIR$/second_react_app" />
+      <recent name="$PROJECT_DIR$/second_react_app/src" />
       <recent name="$PROJECT_DIR$/second_react_app/src/components/spinner" />
       <recent name="$PROJECT_DIR$/second_react_app/src/components/random-planet" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/components/person-details" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/components/item-list" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/components/header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/second_react_app" />
       <recent name="$PROJECT_DIR$/second_react_app/src/components/app" />
     </key>
   </component>
@@ -102,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740491109662</updated>
-      <workItem from="1740491110704" duration="6810000" />
+      <workItem from="1740491110704" duration="7467000" />
     </task>
     <task id="LOCAL-00001" summary="ввв">
       <option name="closed" value="true" />
@@ -160,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740495752428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3 commit feat: добавлен компонент RandomPlanet с загрузкой данных&#10;         fix: исправлены ошибки импортов и пути к файлам&#10;         refactor: добавлена обработка ошибок и ErrorIndicator">
+      <option name="closed" value="true" />
+      <created>1740498192931</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740498192931</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +170,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="2 commit Fix imports, add Spinner, resolve ESLint warnings" />
     <MESSAGE value="3 Обновлен RandomPlanet, исправлен API в SwapiService" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 Обновлен RandomPlanet, исправлен API в SwapiService" />
+    <MESSAGE value="3 commit feat: добавлен компонент RandomPlanet с загрузкой данных&#10;         fix: исправлены ошибки импортов и пути к файлам&#10;         refactor: добавлена обработка ошибок и ErrorIndicator" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 commit feat: добавлен компонент RandomPlanet с загрузкой данных&#10;         fix: исправлены ошибки импортов и пути к файлам&#10;         refactor: добавлена обработка ошибок и ErrorIndicator" />
   </component>
 </project>
