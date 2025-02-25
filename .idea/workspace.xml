@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/app/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/item-list/item-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/item-list/item-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/person-details/person-details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/person-details/person-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/random-planet/random-planet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/random-planet/random-planet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/spinner/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/spinner/spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/services/swapi-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="2 commit Fix imports, add Spinner, resolve ESLint warnings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740491109662</updated>
-      <workItem from="1740491110704" duration="4167000" />
+      <workItem from="1740491110704" duration="4550000" />
     </task>
     <task id="LOCAL-00001" summary="ввв">
       <option name="closed" value="true" />
@@ -127,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740493079787</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2 commit Fix imports, add Spinner, resolve ESLint warnings">
+      <option name="closed" value="true" />
+      <created>1740495563044</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740495563044</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ввв" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="2 commit Fix imports, add Spinner, resolve ESLint warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 commit Fix imports, add Spinner, resolve ESLint warnings" />
   </component>
 </project>
