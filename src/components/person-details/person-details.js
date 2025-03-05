@@ -1,69 +1,83 @@
-import React, { Component } from 'react';
-
-import './person-details.css';
+import React, { Component } from "react";
 import SwapiService from "../../services/swapi-service";
+import Spinner from '../spinner';
+
+import "./person-details.css";
 
 export default class PersonDetails extends Component {
+  swapiService = new SwapiService();
 
-    swapiService = new SwapiService()
+  state = {
+    person: null,
+    loading: true,
+  };
 
-    state = {
-        person: null
+  componentDidMount() {
+    this.updatePerson();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.personId !== prevProps.personId) {
+      this.updatePerson();
+      this.setState({ loading: true });
+    }
+  }
+
+  updatePerson = () => {
+    const { personId } = this.props;
+    if (!personId) {
+      return;
     }
 
-    componentDidMount() {
-        this.updatePerson()
-    }
+    this.swapiService.getPerson(personId).then((person) => {
+      this.setState({ person, loading: false });
+    });
+  };
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.props.personId !== prevProps.personId) {
-            this.updatePerson()
-        }
-    }
+  render() {
+    if (!this.state.person) return <span>Select a person from a list</span>;
 
-    updatePerson = () => {
-        const { personId } = this.props
-        if (!personId) {
-            return;
-        }
+    const { person, loading } = this.state;
 
-        this.swapiService
-            .getPerson(personId)
-            .then((person) => {
-                this.setState({ person })
-            })
-    }
+    const spinner = loading ? <Spinner /> : null;
 
-    render() {
+    const content = !loading ? <PersonDetailsView person={person} /> : null;
 
-        if (!this.state.person)
-            return <span>Select a person from a list</span>
-
-        const { person: { id, name, gender, birthYear, eyeColor }} = this.state
-
-        return (
-            <div className="person-details card">
-                <img className="person-image"
-                src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} />
-
-                <div className="card-body">
-                    <h4>{ name }</h4>
-                    <ul className="list-group list-group-flush">
-                        <li className="list-group-item">
-                            <span className="term">Gender</span>
-                            <span>{ gender }</span>
-                        </li>
-                        <li className="list-group-item">
-                            <span className="term">Birth Year</span>
-                            <span>{ birthYear }</span>
-                        </li>
-                        <li className="list-group-item">
-                            <span className="term">Eye Color</span>
-                            <span>{ eyeColor }</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        )
-    }
+    return (
+      <div className="person-details card">
+        {spinner}
+        {content}
+      </div>
+    );
+  }
 }
+
+const PersonDetailsView = ({ person }) => {
+  const { id, name, gender, birthYear, eyeColor } = person;
+  return (
+    <React.Fragment>
+      <img
+        className="person-image"
+        alt="person image"
+        src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}
+      />
+      <div className="card-body">
+        <h4>{name}</h4>
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">
+            <span className="term">Gender:</span>
+            <span>{gender}</span>
+          </li>
+          <li className="list-group-item">
+            <span className="term">Birth Year:</span>
+            <span>{birthYear}</span>
+          </li>
+          <li className="list-group-item">
+            <span className="term">Eye Color:</span>
+            <span>{eyeColor}</span>
+          </li>
+        </ul>
+      </div>
+    </React.Fragment>
+  );
+};
