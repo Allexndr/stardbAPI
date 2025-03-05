@@ -4,23 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="step 7 Using props in React">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/app-header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/search-panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/todo-list-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_react_app/src/components/todo-list.js" afterDir="false" />
+    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="step 6 Creating and formmating Project structure">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/death-star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/error-indicator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/error-indicator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item-list/item-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/person-details/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/person-details/person-details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/person-details/person-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/planet-details/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/planet-details/planet-details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/planet-details/planet-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/random-planet/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search-panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/starship-details/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/starship-details/starship-details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/starship-details/starship-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo-list-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/swapi-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_react_app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/second_react_app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +60,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/second_react_app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -67,7 +91,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_directory_selection": "/Users/aleksandr/WebstormProjects/my_second_react_app/second_react_app/src/components",
-    "last_opened_file_path": "/Users/aleksandr/WebstormProjects/my_second_react_app/second_react_app/node_modules",
+    "last_opened_file_path": "/Users/aleksandr/WebstormProjects/my_second_react_app",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -80,18 +104,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/second_react_app/node_modules" />
       <recent name="$PROJECT_DIR$/second_react_app/node_modules/.bin" />
       <recent name="$PROJECT_DIR$/second_react_app" />
       <recent name="$PROJECT_DIR$/second_react_app/src/components" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/components/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/second_react_app" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/components" />
-      <recent name="$PROJECT_DIR$/second_react_app/src" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/services" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,7 +152,7 @@
       <updated>1740491109662</updated>
       <workItem from="1740491110704" duration="8626000" />
       <workItem from="1740540183995" duration="6936000" />
-      <workItem from="1741108110030" duration="1571000" />
+      <workItem from="1741108110030" duration="4375000" />
     </task>
     <task id="LOCAL-00001" summary="ввв">
       <option name="closed" value="true" />
@@ -218,7 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740549747697</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="step 7 Using props in React">
+      <option name="closed" value="true" />
+      <created>1741109929441</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741109929441</updated>
+    </task>
+    <task id="LOCAL-00013" summary="garbage">
+      <option name="closed" value="true" />
+      <created>1741109947935</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741109947935</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +274,8 @@
     <MESSAGE value="3 commit добавлен error indicator и изменил рандом планет" />
     <MESSAGE value="5 commit добавлен список и реализована взаимодействие с ним" />
     <MESSAGE value="step 7 Using props in React" />
-    <option name="LAST_COMMIT_MESSAGE" value="step 7 Using props in React" />
+    <MESSAGE value="garbage" />
+    <MESSAGE value="step 6 Creating and formmating Project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="step 6 Creating and formmating Project structure" />
   </component>
 </project>
