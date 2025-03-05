@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="garbage2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/person-details/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/person-details/person-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/person-details/person-details.js" afterDir="false" />
-    </list>
+    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="Step 10: Introduce ErrorBoundary&#10;Added ErrorBoundary component to handle errors gracefully. Wrapped PeoplePage with ErrorBoundary for improved error handling. Refactored ItemList to use children for rendering items dynamically. Removed redundant error handling from PeoplePage, as it's now handled by ErrorBoundary. Deleted unnecessary layout code to streamline the structure." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,12 +13,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -56,36 +51,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/aleksandr/WebstormProjects/my_second_react_app/second_react_app/src/components&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/aleksandr/WebstormProjects/my_second_react_app&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "/Users/aleksandr/WebstormProjects/my_second_react_app/second_react_app/src/components",
+    "last_opened_file_path": "/Users/aleksandr/WebstormProjects/my_second_react_app/src/components",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/second_react_app/node_modules" />
       <recent name="$PROJECT_DIR$/second_react_app/node_modules/.bin" />
       <recent name="$PROJECT_DIR$/second_react_app" />
-      <recent name="$PROJECT_DIR$/second_react_app/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/person-details" />
       <recent name="$PROJECT_DIR$/src/components/item-list" />
-      <recent name="$PROJECT_DIR$/src/components/app" />
-      <recent name="$PROJECT_DIR$/src/services" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741145103407</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Step 9: Introduce Row Component&#10;Created a reusable Row component for layout consistency. Improve Item Rendering. Enhanced ItemList with a renderItem prop for customizable item rendering. Updated PeoplePage to use Row for better structure. Applied minor refactoring for readability and maintainability.&#10;master&#10;1 parent">
+      <option name="closed" value="true" />
+      <created>1741146368987</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741146368987</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Step 10: Introduce ErrorBoundary&#10;Added ErrorBoundary component to handle errors gracefully. Wrapped PeoplePage with ErrorBoundary for improved error handling. Refactored ItemList to use children for rendering items dynamically. Removed redundant error handling from PeoplePage, as it's now handled by ErrorBoundary. Deleted unnecessary layout code to streamline the structure.">
+      <option name="closed" value="true" />
+      <created>1741146890569</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741146890569</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +275,8 @@
     <MESSAGE value="Step 8: Refactor Data Fetching &amp; Cleanup&#10;Refactored SwapiService methods to use arrow functions for better this binding. Updated ItemList to fetch data dynamically via props.getData, making it reusable for people, planets, and starships. Added new ItemList instances in App.js to display planets and starships. Improved error handling and minor CSS adjustments. Cleaned up imports and improved code readability." />
     <MESSAGE value="garbage" />
     <MESSAGE value="garbage2" />
-    <option name="LAST_COMMIT_MESSAGE" value="garbage2" />
+    <MESSAGE value="Step 9: Introduce Row Component&#10;Created a reusable Row component for layout consistency. Improve Item Rendering. Enhanced ItemList with a renderItem prop for customizable item rendering. Updated PeoplePage to use Row for better structure. Applied minor refactoring for readability and maintainability.&#10;master&#10;1 parent" />
+    <MESSAGE value="Step 10: Introduce ErrorBoundary&#10;Added ErrorBoundary component to handle errors gracefully. Wrapped PeoplePage with ErrorBoundary for improved error handling. Refactored ItemList to use children for rendering items dynamically. Removed redundant error handling from PeoplePage, as it's now handled by ErrorBoundary. Deleted unnecessary layout code to streamline the structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 10: Introduce ErrorBoundary&#10;Added ErrorBoundary component to handle errors gracefully. Wrapped PeoplePage with ErrorBoundary for improved error handling. Refactored ItemList to use children for rendering items dynamically. Removed redundant error handling from PeoplePage, as it's now handled by ErrorBoundary. Deleted unnecessary layout code to streamline the structure." />
   </component>
 </project>
