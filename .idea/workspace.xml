@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="step 6 Creating and formmating Project structure">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/death-star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/error-indicator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/error-indicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item-list/item-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/person-details/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/person-details/person-details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/person-details/person-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/planet-details/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/planet-details/planet-details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/planet-details/planet-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/random-planet/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search-panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/spinner/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/starship-details/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/starship-details/starship-details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/starship-details/starship-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/swapi-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="355f7ca2-ef38-40e4-8820-beeed28cd3e6" name="Changes" comment="garbage2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +111,7 @@
       <updated>1740491109662</updated>
       <workItem from="1740491110704" duration="8626000" />
       <workItem from="1740540183995" duration="6936000" />
-      <workItem from="1741108110030" duration="4375000" />
+      <workItem from="1741108110030" duration="4676000" />
     </task>
     <task id="LOCAL-00001" summary="ввв">
       <option name="closed" value="true" />
@@ -258,7 +217,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741109947935</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Step 8: Refactor Data Fetching &amp; Cleanup&#10;Refactored SwapiService methods to use arrow functions for better this binding. Updated ItemList to fetch data dynamically via props.getData, making it reusable for people, planets, and starships. Added new ItemList instances in App.js to display planets and starships. Improved error handling and minor CSS adjustments. Cleaned up imports and improved code readability.">
+      <option name="closed" value="true" />
+      <created>1741145091286</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741145091286</updated>
+    </task>
+    <task id="LOCAL-00015" summary="garbage2">
+      <option name="closed" value="true" />
+      <created>1741145103407</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741145103407</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,8 +249,10 @@
     <MESSAGE value="3 commit добавлен error indicator и изменил рандом планет" />
     <MESSAGE value="5 commit добавлен список и реализована взаимодействие с ним" />
     <MESSAGE value="step 7 Using props in React" />
-    <MESSAGE value="garbage" />
     <MESSAGE value="step 6 Creating and formmating Project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="step 6 Creating and formmating Project structure" />
+    <MESSAGE value="Step 8: Refactor Data Fetching &amp; Cleanup&#10;Refactored SwapiService methods to use arrow functions for better this binding. Updated ItemList to fetch data dynamically via props.getData, making it reusable for people, planets, and starships. Added new ItemList instances in App.js to display planets and starships. Improved error handling and minor CSS adjustments. Cleaned up imports and improved code readability." />
+    <MESSAGE value="garbage" />
+    <MESSAGE value="garbage2" />
+    <option name="LAST_COMMIT_MESSAGE" value="garbage2" />
   </component>
 </project>
