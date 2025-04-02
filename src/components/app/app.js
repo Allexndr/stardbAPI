@@ -4,13 +4,13 @@ import Header from '../header'
 import RandomPlanet from '../random-planet'
 
 import './app.css'
-import ErrorIndicator from "../error-indicator"
+import { ErrorIndicator, NotFoundIndicator } from "../errors"
 import ErrorBoundary from "../error-boundary"
 // import DummySwapiService from "../../services/dummy-swapi-service"
 
 import { SwapiServiceProvider } from '../swapi-service-context'
 import SwapiService from "../../services/swapi-service"
-import { PeoplePage, PlanetsPage, StarshipsPage, LoginPage, SecretPage } from "../pages"
+import {PeoplePage, PlanetsPage, StarshipsPage, LoginPage, SecretPage, WelcomePage} from "../pages"
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import StarshipDetails from "../sw-components/starship-details";
@@ -50,7 +50,7 @@ export default class App extends Component{
                             <Header/>
                             <RandomPlanet />
                             <Switch>
-                                <Route path="/" render={() => <h4>Welcome to StarDB</h4>} exact />
+                                <Route path="/" component={WelcomePage} exact />
 
                                 <Route path="/people/:id?" component={PeoplePage} exact/>
 
@@ -71,7 +71,7 @@ export default class App extends Component{
                                     <SecretPage isLoggedIn={ isLoggedIn }/>
                                 )} exact />
 
-                                <Route render={() => <h4>Page not found</h4>}/>
+                                <Route component={NotFoundIndicator}/>
                             </Switch>
                         </div>
                     </Router>
