@@ -1,21 +1,18 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
+import Header from '../header';
+import RandomPlanet from '../random-planet';
+import './app.css';
+import ErrorIndicator from "../error-indicator";
+import ErrorBoundary from "../error-boundary";
 
-import Header from '../header'
-import RandomPlanet from '../random-planet'
-
-import './app.css'
-import ErrorIndicator from "../error-indicator"
-import ErrorBoundary from "../error-boundary"
-// import DummySwapiService from "../../services/dummy-swapi-service"
-
-import { SwapiServiceProvider } from '../swapi-service-context'
-import SwapiService from "../../services/swapi-service"
-import { PeoplePage, PlanetsPage, StarshipsPage } from "../pages"
-
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { SwapiServiceProvider } from '../swapi-service-context';
+import SwapiService from "../../services/swapi-service";
+import { PeoplePage, PlanetsPage, StarshipsPage } from "../pages";
 import StarshipDetails from "../sw-components/starship-details";
 
-export default class App extends Component{
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes and Route from react-router-dom
+
+export default class App extends Component {
 
     state = {
         selectedItem: null,
@@ -35,27 +32,30 @@ export default class App extends Component{
 
         return (
             <ErrorBoundary>
-                <SwapiServiceProvider value={this.state.swapiService} >
+                <SwapiServiceProvider value={this.state.swapiService}>
                     <Router>
                         <div className="stardb-app">
-                            <Header/>
+                            <Header />
                             <RandomPlanet />
 
-                            <Route path="/" render={() => <h4>Welcome to StarDB</h4>} exact />
+                            <Routes>
+                                {/* Define your routes using the element prop */}
+                                <Route path="/" element={<h4>Welcome to StarDB</h4>} exact />
 
-                            <Route path="/people/:id?" component={PeoplePage} exact/>
+                                <Route path="/people/:id?" element={<PeoplePage />} exact />
 
-                            <Route path="/planets" component={PlanetsPage} exact/>
+                                <Route path="/planets" element={<PlanetsPage />} exact />
 
-                            <Route path="/starships" component={StarshipsPage} exact/>
-                            <Route path="/starships/:id" render={({ match }) => {
-                                const { id } = match.params
-                                return <StarshipDetails itemId={id} />
-                            }}/>
+                                <Route path="/starships" element={<StarshipsPage />} exact />
+
+                                <Route path="/starships/:id" element={
+                                    <StarshipDetails itemId={window.location.pathname.split('/').pop()} />
+                                } />
+                            </Routes>
                         </div>
                     </Router>
                 </SwapiServiceProvider>
             </ErrorBoundary>
-        )
+        );
     }
 }
